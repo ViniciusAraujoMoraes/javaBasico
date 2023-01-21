@@ -2,15 +2,20 @@ public class MinhaClasse {
 
     public static void main(String [] args){
 
-        String NOME = "Jeremias";
-        int idade = 23;
-        int peso = 60;
-        System.out.println("O nome do nosso candidato é "+ NOME + ", a idade dele é ataualmente " + idade + " anos, e seu peso é de aproximadamente" +peso);
-        int anosPassados = 30;
-        idade = idade + anosPassados;
-        peso = peso + 15;
-        System.out.println("Porem depois de " + anosPassados + " anos, "+ NOME +" terá "+ idade +" anos de idade e "+ peso +" metros de peso");
+        String primeiroNome = "Jeremias";
+        String segundoNome = "Moraes";
+        int dataNascimento = 1950;
+        int anoVijente = 2023;
+        String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+        int idade = sub(dataNascimento, anoVijente);
+        System.out.println("o nome é " + nomeCompleto + " e a idade atual é " + idade);
     }
-    /*Utilização de variáveis para exibir mensagens na tela.*/
-
+    public static String nomeCompleto (String primeiroNome, String segundoNome){
+        return primeiroNome.concat(" ").concat(segundoNome);
+    }
+    public static int sub(int dataNascimento, int anoVijente){
+        return (anoVijente - dataNascimento);
+    }
+    //Utilização de métodos e variáveis.   para exibir mensagens na tela
+    
 }

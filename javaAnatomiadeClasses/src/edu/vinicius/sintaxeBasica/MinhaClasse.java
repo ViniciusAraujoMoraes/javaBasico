@@ -1,3 +1,4 @@
+package edu.vinicius.sintaxeBasica;
 public class MinhaClasse {
 
     public static void main(String [] args){
@@ -16,6 +17,6 @@ public class MinhaClasse {
     public static int sub(int dataNascimento, int anoVijente){
         return (anoVijente - dataNascimento);
     }
-    //Utilização de métodos e variáveis.   para exibir mensagens na tela
+    //Utilização de métodos e variáveis para exibir mensagens na tela
     
 }
